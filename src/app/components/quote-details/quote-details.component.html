@@ -1,0 +1,15 @@
+<footer class="blockquote-footer text-right">{{quote.author}}</footer>
+<div class="container">
+  <div class="row">
+    <div  class="col">
+      <small ><button (click)='quoteAdd()'><i class="fa fa-thumbs-up"></i></button></small>
+      <p>Like: {{quote.upVote}} </p>
+    </div>
+
+    <div class="col">
+      <small><button (click)='quoteMinus()' type="button" name="button"><i class="fa fa-thumbs-down"></i></button></small>
+      <p>Unlike: {{quote.downVote}}  </p>
+    </div>
+  </div>
+  <button (click)='quoteDelete(true)' class="btn btn-danger btn-sm">Delete</button>
+</div>
