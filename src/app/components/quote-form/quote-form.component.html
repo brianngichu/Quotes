@@ -1,21 +1,21 @@
 
 <div class="container">
-    <div class="details">
-        <form (ngSubmit)='submitQuote()' #goalForm ='ngForm'>
-            <div class="form-group">
-                <input [(ngModel)]="newQuote.name" name="name" #name="ngModel" type="text"  class=" name form-control" id="name" placeholder="Full Names">
-            </div>
-            <div class="form-group">
-                <textarea [(ngModel)]="newQuote.quoteWords" name="quoteWords" #quoteWords="ngModel"  id="quoteWords" rows="4"  class="quotes form-control"
-                placeholder="Quote"></textarea>
-            </div>
-            <div class="form-group">
-                <input [(ngModel)]="newQuote.author" name="author" #author="ngModel" type='text' id="author"  class="author form-control" placeholder="Author">
-            </div>
-            <div class="form-group">
-               <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" class="date form-control">
-           </div>
-          <button type="submit" class="btn btn-success">Generate</button>
-        </form>
-    </div>
+  <div class="details">
+      <form (ngSubmit)='submitQuote()' #goalForm ='ngForm'>
+          <div class="form-group">
+              <input [(ngModel)]="newQuote.name" name="name" #name="ngModel" type="text"  class=" name form-control" id="name" placeholder="Full Names">
+          </div>
+          <div class="form-group">
+              <textarea [(ngModel)]="newQuote.quoteWords" name="quoteWords" #quoteWords="ngModel"  id="quoteWords" rows="4"  class="quotes form-control"
+              placeholder="Quote"></textarea>
+          </div>
+          <div class="form-group">
+              <input [(ngModel)]="newQuote.author" name="author" #author="ngModel" type='text' id="author"  class="author form-control" placeholder="Author">
+          </div>
+          <div class="form-group">
+             <input type='date' id="complete" [(ngModel)]="newQuote.completeDate" name="completeDate" #completeDate="ngModel" class="date form-control">
+         </div>
+        <button type="submit" class="btn btn-success">Generate</button>
+      </form>
+  </div>
 </div>
